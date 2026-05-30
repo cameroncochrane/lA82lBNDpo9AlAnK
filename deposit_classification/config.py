@@ -11,10 +11,10 @@ PROJ_ROOT = Path(__file__).resolve().parents[1]
 logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}")
 
 DATA_DIR = PROJ_ROOT / "data"
-RAW_DATA_DIR = DATA_DIR / "raw"
-INTERIM_DATA_DIR = DATA_DIR / "interim"
-PROCESSED_DATA_DIR = DATA_DIR / "processed"
-EXTERNAL_DATA_DIR = DATA_DIR / "external"
+RAW_DATA_DIR = DATA_DIR / "raw" # Self-explanatory...
+INTERIM_DATA_DIR = DATA_DIR / "interim" # Dataset after loading of raw data and checking null/empty values + dealing with them
+PROCESSED_DATA_DIR = DATA_DIR / "processed" # Data used for model training/testing, and predictions, is placed here
+EXTERNAL_DATA_DIR = DATA_DIR / "external" # Not relevant in this case.
 
 MODELS_DIR = PROJ_ROOT / "models"
 

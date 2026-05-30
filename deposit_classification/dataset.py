@@ -4,25 +4,20 @@ from loguru import logger
 from tqdm import tqdm
 import typer
 
-from deposit_classification.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
+import pandas as pd
+
+from deposit_classification.config import RAW_DATA_DIR, INTERIM_DATA_DIR
 
 app = typer.Typer()
 
 
 @app.command()
 def main(
-    # ---- REPLACE DEFAULT PATHS AS APPROPRIATE ----
-    input_path: Path = RAW_DATA_DIR / "dataset.csv",
-    output_path: Path = PROCESSED_DATA_DIR / "dataset.csv",
-    # ----------------------------------------------
+    input_path: Path = RAW_DATA_DIR / "term-deposit-marketing-2020.csv",
+    output_path: Path = INTERIM_DATA_DIR / "interim_dataset.csv",
 ):
-    # ---- REPLACE THIS WITH YOUR OWN CODE ----
-    logger.info("Processing dataset...")
-    for i in tqdm(range(10), total=10):
-        if i == 5:
-            logger.info("Something happened for iteration 5.")
-    logger.success("Processing dataset complete.")
-    # -----------------------------------------
+    raw_data = pd.read_csv(input_path)
+    
 
 
 if __name__ == "__main__":
