@@ -1,8 +1,17 @@
 loguru
 mkdocs
-pip
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+imbalanced-learn
+xgboost
+joblib
 python-dotenv
-ruff
 tqdm
 typer
+ruff
+ipykernel
 -e .

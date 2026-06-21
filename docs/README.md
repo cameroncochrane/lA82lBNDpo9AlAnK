@@ -1,12 +1,17 @@
 Generating the docs
 ----------
 
-Use [mkdocs](http://www.mkdocs.org/) structure to update the documentation. 
+This project uses MkDocs with configuration stored at `docs/mkdocs.yml`.
 
 Build locally with:
 
-    mkdocs build
+    mkdocs build -f docs/mkdocs.yml
 
 Serve locally with:
 
-    mkdocs serve
+    mkdocs serve -f docs/mkdocs.yml
+
+Documentation sources are in:
+
+    docs/docs/index.md
+    docs/docs/getting-started.md
