@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = lA82lBNDpo9AlAnK
+PROJECT_NAME = Term-Deposit-Classification
 PYTHON_VERSION = 3.12
 PYTHON_INTERPRETER = python
 
